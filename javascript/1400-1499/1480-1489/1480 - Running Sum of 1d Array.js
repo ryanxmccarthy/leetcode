@@ -11,3 +11,5 @@ var runningSum = function (nums) {
   }
   return runningSums;
 };
+
+//optimized solution
