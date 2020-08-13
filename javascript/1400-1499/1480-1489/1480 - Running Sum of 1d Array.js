@@ -12,4 +12,20 @@ var runningSum = function (nums) {
   return runningSums;
 };
 
-//optimized solution
+//reduce solution
+var runningSum = function (nums) {
+  let sum = 0;
+  return nums.reduce((res, item) => {
+    res.push((sum += item));
+    return res;
+  }, []);
+};
+
+//map solution
+var runningSum = function (nums) {
+  let sum = 0;
+  return nums.map((x) => {
+    sum += x;
+    return sum;
+  });
+};
