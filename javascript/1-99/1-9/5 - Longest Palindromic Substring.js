@@ -7,7 +7,18 @@
  var longestPalindrome = function(s) {
     if (s.length < 1) return '';
 
-    let longestPalindrom = '';
+    let longestPalindrome = '';
 
-    
+    var getLongestPalindrome = function (leftPosition, rightPosition) {
+        while ( 
+            leftPosition >= 0 &&
+            rightPosition < s.length &&
+            s[leftPosition] === s[rightPosition]
+        ) {
+            leftPosition--;
+            rightPosition++;
+        }
+
+        if
+    }
 };
