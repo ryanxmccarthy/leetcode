@@ -19,6 +19,10 @@
             rightPosition++;
         }
 
-        if
+        if (rightPosition - leftPosition > longestPalindrome) {
+            longestPalLeft = leftPosition + 1;
+            longestPalRight = rightPosition - 1;
+            longestPalLength = longestPalRight - longestPalLeft + 1;
+        }
     }
 };
