@@ -9,6 +9,7 @@
         sum = parseInt(a, 2) + parseInt(b, 2)
         return sum.toString(2);
     } else {
-
+        sum = bigInt('0b' + a) + bigInt('0b' + b);
+        return sum.toString(2)
     }  
 };
