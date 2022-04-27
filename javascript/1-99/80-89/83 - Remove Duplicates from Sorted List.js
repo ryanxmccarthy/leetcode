@@ -10,5 +10,5 @@
  * @return {ListNode}
  */
  var deleteDuplicates = function(head) {
-    
+    let current = head;
 };
