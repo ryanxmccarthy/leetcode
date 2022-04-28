@@ -10,5 +10,5 @@
         nums1.splice(i + n, 1, nums2[i]);
     }
     
-    return nums1;
+    return nums1.sort();
 };
