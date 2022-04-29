@@ -23,9 +23,15 @@
             if (pred.right === node) {
                 pred.right = null;
                 result.push(node.val)
+                node = node.right
+            } else {
+                pred.right = node
+                node = node.left
             }
         }
     }
+
+    return result
 };
 
 function findPredecessor(root) {
