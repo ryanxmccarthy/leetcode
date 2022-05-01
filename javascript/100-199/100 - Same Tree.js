@@ -12,5 +12,11 @@
  * @return {boolean}
  */
  var isSameTree = function(p, q) {
-    
+    if (p == null && q == null) {
+        break;
+    }
+
+    if (p == q) {
+        
+    }
 };
