@@ -13,10 +13,16 @@
  */
  var isSameTree = function(p, q) {
     if (p == null && q == null) {
-        break;
+        return true
     }
 
-    if (p == q) {
-        
+    if ((p == null && q != null) || (q == null && p != null)) {
+        return false
     }
+
+    if (p.val != q.val) {
+        return false;
+    }
+
+    isSameTrue(p.left, q.left);
 };
