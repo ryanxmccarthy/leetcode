@@ -11,5 +11,15 @@
  * @return {boolean}
  */
  var isSymmetric = function(root) {
+    if (root == null) {
+        return true;
+    }
     
+    if (root.left = root.right) {
+        return true;
+    } else {
+        return false;
+    }
+    
+    isSymmetric();
 };
