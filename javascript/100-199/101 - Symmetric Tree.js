@@ -11,15 +11,26 @@
  * @return {boolean}
  */
  var isSymmetric = function(root) {
-    if (root == null) {
-        return true;
+    let result = true;
+
+    function helper(node1, node2) {
+        if (!node1 && !node2) {
+            result = false;
+        }
     }
+
+    return result;
+    // if (root == null) {
+    //     return true;
+    // }
     
-    if (root.left = root.right) {
-        return true;
-    } else {
-        return false;
-    }
+    // if (root.left = root.right) {
+    //     return true;
+    // } else {
+    //     return false;
+    // }
     
-    isSymmetric();
+    // root = root.left;
+    
+    // isSymmetric();
 };
