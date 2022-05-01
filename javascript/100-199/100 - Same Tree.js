@@ -24,5 +24,5 @@
         return false;
     }
 
-    isSameTrue(p.left, q.left);
+    return isSameTrue(p.left, q.left) && isSameTree(p.right, q.right);
 };
