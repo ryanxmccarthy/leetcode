@@ -15,11 +15,18 @@
 
     function helper(node1, node2) {
         if (!node1 && !node2) {
+            return;
+        }
+
+        if (!node1 || !node2 || node1.val != node2.val) {
             result = false;
+            return
         }
     }
 
     return result;
+
+    //my attempt
     // if (root == null) {
     //     return true;
     // }
