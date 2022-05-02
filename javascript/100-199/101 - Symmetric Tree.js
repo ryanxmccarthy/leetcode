@@ -22,7 +22,12 @@
             result = false;
             return
         }
+
+        helper(node1.left, node2.right)
+        helper(node1.right, node2.left)
     }
+
+    helper(root, root)
 
     return result;
 
