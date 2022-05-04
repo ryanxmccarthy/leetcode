@@ -16,8 +16,11 @@
     let maxDepth = (node) => {
         if (!node) return 0;
         let l = maxDepth(node.left), r = maxDepth(node.right);
-        if (Math.abs(l - r) > 1) res = false;
+        if (Math.abs(l - r) > 1) result = false;
 
-        return 1 + Math.max(l, r)
+        return 1 + Math.max(l, r);
     }
+
+    maxDepth(root);
+    return result;
 };
