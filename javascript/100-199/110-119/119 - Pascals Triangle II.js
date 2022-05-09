@@ -15,4 +15,6 @@
         }
         row.push(1);
     }
+
+    return row;
 };
