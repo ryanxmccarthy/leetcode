@@ -11,6 +11,8 @@
  * @return {number[]}
  */
  var preorderTraversal = function(root) {
+    if (!root) return [];
+
     const stack = [root];
     const result = [];
 
